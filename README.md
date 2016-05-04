@@ -47,6 +47,7 @@ java -cp GetTroops-1.0-jar-with-dependencies.jar com.troops.service.URLShortener
 mvn clean compile assembly:single
 
 - To create the short url 
+
 Request:
 ```
 POST http://localhost:4567/shorten
@@ -61,6 +62,7 @@ Response:
 }
 ```
 - To get the long url
+
 Request:
 ```
 GET http://localhost:4567/baa
@@ -74,11 +76,13 @@ Response:
 }
 ```
 - To get the number of clicks for short url 
+
 Request:
 ```
 GET http://localhost:4567/getclicks/baa
 ```
 * where "baa" shortened url code
+
 Response:
 ```
 {
