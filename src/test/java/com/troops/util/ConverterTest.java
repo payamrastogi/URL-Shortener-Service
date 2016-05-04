@@ -1,7 +1,8 @@
 package com.troops.util;
 
 import org.junit.Test;
-import com.troops.util.Convert;
+
+import com.example.util.Convert;
 
 import org.junit.Assert;
 

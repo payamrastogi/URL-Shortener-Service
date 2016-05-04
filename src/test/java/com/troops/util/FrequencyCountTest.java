@@ -1,6 +1,9 @@
 package com.troops.util;
 
 import org.junit.Test;
+
+import com.example.util.FrequencyCount;
+
 import org.junit.Assert;
 
 public class FrequencyCountTest 

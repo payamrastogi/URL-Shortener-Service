@@ -92,8 +92,6 @@ Response:
   "lastAccessedOn": "2016-05-01 15:47:32.0"
 }
 ```
-- Folder GetTroops contains all the sources and can imported in eclipse using option
-	"import existing maven projects"
 
 
 
