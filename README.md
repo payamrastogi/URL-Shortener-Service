@@ -7,6 +7,7 @@ create database troops;
 DROP table IF EXISTS urlclicks;
 DROP table IF EXISTS urls;
 
+^
 create table urls
 (
 	id int unsigned AUTO_INCREMENT,
@@ -18,6 +19,7 @@ create table urls
 ALTER TABLE urls AUTO_INCREMENT=3364;
 ALTER TABLE urls ADD INDEX idx_fCountCode (fCountCode);
 
+^
 create table urlclicks
 (
 	id int unsigned,
