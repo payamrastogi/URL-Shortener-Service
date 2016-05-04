@@ -7,7 +7,7 @@ create database troops;
 DROP table IF EXISTS urlclicks;
 DROP table IF EXISTS urls;
 
-^
+```
 create table urls
 (
 	id int unsigned AUTO_INCREMENT,
@@ -19,7 +19,7 @@ create table urls
 ALTER TABLE urls AUTO_INCREMENT=3364;
 ALTER TABLE urls ADD INDEX idx_fCountCode (fCountCode);
 
-^
+
 create table urlclicks
 (
 	id int unsigned,
@@ -27,7 +27,7 @@ create table urlclicks
     lastAccessedOn timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (id) REFERENCES urls(id)
 );
-
+```
 - Provide the following information in hikari.properties file
 	* Database username and password
 	- dataSource.user (default is root)
