@@ -48,38 +48,46 @@ mvn clean compile assembly:single
 
 - To create the short url 
 Request:
+```
 POST http://localhost:4567/shorten
 {
 	"url":"google.com"
 }
-
+```
 Response:
+```
 {
   "ShortURL": "http://localhost:4567/bab"
 }
-
+```
 - To get the long url
 Request:
+```
 GET http://localhost:4567/baa
+```
 * where "baa" shortened url code
 
-Response
+Response:
+```
 {
   "url": "google.com"
 }
-
+```
 - To get the number of clicks for short url 
 Request:
+```
 GET http://localhost:4567/getclicks/baa
+```
 * where "baa" shortened url code
 Response:
+```
 {
   "url": "google.com",
   "clicks": 5,
   "createdOn": "2016-05-01 00:11:07.0",
   "lastAccessedOn": "2016-05-01 15:47:32.0"
 }
-
+```
 - Folder GetTroops contains all the sources and can imported in eclipse using option
 	"import existing maven projects"
 
